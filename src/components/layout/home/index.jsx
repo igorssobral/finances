@@ -82,7 +82,6 @@ export default function Home() {
               icon={<SiNubank className="nubank icon" />}
               label="R$ 99,99"
             />
-         
           </li>
           <div className="primary-content">
             <Chart
@@ -93,7 +92,23 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="section-secondary"></div>
+        <div className="section-secondary">
+          <div className="secondary">
+            <p>Comida </p>
+            <p>Energia</p>
+            <p>Agua</p>
+            <p>Academia</p>
+            <p>Lazer</p>
+
+            <div className="gastos-secondary">
+              <span className="spans"> R$799,00</span>
+              <span className="spans"> R$199,00</span>
+              <span className="spans"> R$149,00</span>
+              <span className="spans"> R$129,00</span>
+              <span className="spans"> R$499,00</span>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
