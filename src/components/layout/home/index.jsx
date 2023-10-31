@@ -84,29 +84,24 @@ export default function Home() {
             />
           </li>
           <div className="primary-content">
-            <Chart
-              chartType="PieChart"
-              data={data}
-              options={options}
-              className="grapGastos"
-            />
+           
           </div>
         </div>
         <div className="section-secondary">
           <div className="secondary">
-            <p>Comida </p>
-            <p>Energia</p>
-            <p>Agua</p>
-            <p>Academia</p>
-            <p>Lazer</p>
+            <p>Comida <span className="spans"> R$799,00</span></p>
+            <p>Energia  <span className="spans"> R$199,00</span></p>
+            <p>Agua  <span className="spans"> R$149,00</span></p>
+            <p>Academia<span className="spans"> R$129,00</span></p>
+            <p>Lazer<span className="spans"> R$499,00</span></p>
 
-            <div className="gastos-secondary">
-              <span className="spans"> R$799,00</span>
-              <span className="spans"> R$199,00</span>
-              <span className="spans"> R$149,00</span>
-              <span className="spans"> R$129,00</span>
-              <span className="spans"> R$499,00</span>
-            </div>
+            
+              
+            
+             
+             
+              
+            
           </div>
         </div>
       </section>
