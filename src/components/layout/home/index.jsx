@@ -64,24 +64,24 @@ export default function Home() {
           <label>Seus Bancos</label>
           <li className="banks">
             <Icon
-              icon={<SiNubank className="nubank icon" />}
-              label="R$ 99,99"
+              icon={<SiNubank  className="nubank icon" />}
+              label="R$ 99,99" bank="Nubank"
+            />
+            <Icon
+              icon={<SiPicpay  className="picpay icon" />}
+              label="R$ 99,99" bank="Picpay"
+            />
+            <Icon
+              icon={<SiNubank  className="nubank icon" />}
+              label="R$ 99,99"bank="Nubank"
             />
             <Icon
               icon={<SiPicpay className="picpay icon" />}
-              label="R$ 99,99"
+              label="R$ 99,99" bank="Picpay"
             />
             <Icon
               icon={<SiNubank className="nubank icon" />}
-              label="R$ 99,99"
-            />
-            <Icon
-              icon={<SiPicpay className="picpay icon" />}
-              label="R$ 99,99"
-            />
-            <Icon
-              icon={<SiNubank className="nubank icon" />}
-              label="R$ 99,99"
+              label="R$ 99,99" bank="Nubank"
             />
           </li>
           <div className="primary-content"></div>

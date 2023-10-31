@@ -19,8 +19,32 @@
     border-color: rgb(0, 127, 253);
 }
 
+.bank{
+    width: 80px;
+   font-size: 2vh;
+   font-weight: bolder;
+   margin: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .icon-content  {
-        width: 35vh;
+        width: 47vh;
+        justify-content: start;
     }
+    .icon-content  p{
+        font-size: 1.5vh;
+        width: 135px;
+    }
+   
+}
+@media screen and (max-width: 468px) {
+    .icon-content  {
+        width: 35vh;
+        justify-content: start;
+    }
+    .icon-content  p{
+        font-size: 1.4vh;
+        width: 135px;
+    }
+   
 }
