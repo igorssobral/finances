@@ -83,25 +83,15 @@ export default function Home() {
               label="R$ 99,99"
             />
           </li>
-          <div className="primary-content">
-           
-          </div>
+          <div className="primary-content"></div>
         </div>
         <div className="section-secondary">
           <div className="secondary">
-            <p>Comida <span className="spans"> R$799,00</span></p>
-            <p>Energia  <span className="spans"> R$199,00</span></p>
-            <p>Agua  <span className="spans"> R$149,00</span></p>
-            <p>Academia<span className="spans"> R$129,00</span></p>
-            <p>Lazer<span className="spans"> R$499,00</span></p>
-
-            
-              
-            
-             
-             
-              
-            
+            <p>Comida R$799,00</p>
+            <p>Energia R$199,00</p>
+            <p>Agua R$149,00</p>
+            <p>Academia R$129,00</p>
+            <p>Lazer R$499,00</p>
           </div>
         </div>
       </section>
