@@ -61,6 +61,7 @@ export default function Home() {
       </section>
       <section className="section-home">
         <div className="section-primary">
+          <label>Seus Bancos</label>
           <li className="banks">
             <Icon
               icon={<SiNubank className="nubank icon" />}

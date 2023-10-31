@@ -1,8 +1,8 @@
 .icon-content {
-   
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .icon-content p{
     width: 200px;
@@ -11,15 +11,16 @@
     border-radius: 50px;
     margin-left: 10px;
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(0, 127, 253);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-align: center;
+    font-weight: bolder;
     border-color: rgb(0, 127, 253);
 }
 
 @media screen and (max-width: 768px) {
-    .icon-content p {
-        width: 200px;
+    .icon-content  {
+        width: 35vh;
     }
 }

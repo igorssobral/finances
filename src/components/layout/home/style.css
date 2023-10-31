@@ -110,6 +110,10 @@
     border-radius: 20px;
 }
 
+.section-primary label{
+  
+}
+
 .primary-content{
    display: flex;
    align-items: center;
@@ -125,6 +129,18 @@
     border-radius: 20px;
 }
 
+@media screen and (max-width: 468px) {
+    .icon{
+        width: 40px;
+        height: 40px;
+        right: 10px;
+    }
+
+    .banks{
+
+    }
+
+}
 @media screen and (max-width: 768px) {
     .section-content {
         width: 90%;
@@ -141,19 +157,14 @@
 
     .section-primary, .section-secondary {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        
         width: 100%;
 
     }
 
-    .banks{
-        display: flex;
-        width: 50%;
-        position: relative;
-       justify-content: space-between;
-        
-    }
+    
     .primary-content{
         width: 91%;
         margin: 20px; 
@@ -187,7 +198,7 @@
 }
 
 .icon {
-    font-size: 6vh;
+    font-size: 60px;
     border-bottom: 10px solid blue;
     border: 1px solid;
     border-radius: 20%;
