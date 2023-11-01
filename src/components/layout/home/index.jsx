@@ -2,6 +2,7 @@ import "./style.css";
 import Button from "@mui/material/Button";
 import { AiOutlineSearch, AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
+import { VscDiffAdded } from "react-icons/vsc";
 import { SiNubank, SiPicpay } from "react-icons/si";
 import { useState } from "react";
 import Icon from "../../ui/icon";
@@ -56,6 +57,9 @@ export default function Home() {
                 className="eye"
               />
             )}
+          </p>{" "}
+          <p>
+            Adicionar saldo <VscDiffAdded className="add" />
           </p>
         </div>
       </section>
@@ -94,39 +98,37 @@ export default function Home() {
         <div className="section-secondary">
           <label className="label">Seus Gastos</label>
           <div className="secondary">
-          
             <table className="table-value">
               <tr>
                 <th>Fonte</th>
                 <th>Valor</th>
               </tr>
-             
-                <tr>
-                  <td>Comida</td>
-                  <td>R$799,00</td>
-                </tr>
 
-                <tr>
-                  <td>Energia</td>
-                  <td>R$199,00</td>
-                </tr>
+              <tr>
+                <td>Comida</td>
+                <td>R$799,00</td>
+              </tr>
 
-                <tr>
-                  <td>Agua</td>
-                  <td>R$149,00</td>
-                </tr>
+              <tr>
+                <td>Energia</td>
+                <td>R$199,00</td>
+              </tr>
 
-                <tr>
-                  <td>Academia</td>
-                  <td>R$129,00</td>
-                </tr>
+              <tr>
+                <td>Agua</td>
+                <td>R$149,00</td>
+              </tr>
 
-                <tr>
-                  <td>Lazer</td>
+              <tr>
+                <td>Academia</td>
+                <td>R$129,00</td>
+              </tr>
 
-                  <td>R$499,00</td>
-                </tr>
-              
+              <tr>
+                <td>Lazer</td>
+
+                <td>R$499,00</td>
+              </tr>
             </table>
           </div>
         </div>
