@@ -111,7 +111,7 @@
     border-radius: 20px;
 }
 
-.section-primary label {
+.label {
     display: flex;
     justify-content: center;
     font-size: 2.5vh;
@@ -130,14 +130,16 @@
 
 .section-secondary {
     display: flex;
+    flex-direction: column;
     width: 80%;
     height: 500px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    
+
+
 }
 
-.banks{
+.banks {
     display: flex;
     align-items: center;
 }
@@ -145,6 +147,9 @@
 
 
 @media screen and (max-width: 468px) {
+    .table-value {
+        width: 200px;
+    }
 
 }
 
@@ -161,13 +166,14 @@
         height: 100%;
     }
 
-    .section-primary , .section-secondary {
+    .section-primary, .section-secondary {
         display: flex;
         width: 100%;
-        
+
 
     }
-    .banks{
+
+    .banks {
         display: flex;
         align-items: center;
     }
@@ -179,6 +185,10 @@
 
     }
 
+    .table-value {
+        display: table;
+
+    }
 
 
 
@@ -239,6 +249,12 @@
     font-weight: bold;
 }
 
+.secondary {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
 
 .spans {
     width: 90px;
@@ -246,11 +262,21 @@
 
 }
 
-/* .table-value{
-    background-color: aqua;
-    width: 100%;
-    height: 100%;
-    display: table;
-    flex-direction: column;
-   
-} */
+table, td, th {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(0, 127, 253);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 1.8vh;
+}
+
+.table-value {
+    width: 300px;
+
+}
+
+.table-value td {
+    color: rgb(0, 127, 253);
+}

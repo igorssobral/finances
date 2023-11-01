@@ -61,7 +61,7 @@ export default function Home() {
       </section>
       <section className="section-home">
         <div className="section-primary">
-          <label>Seus Bancos</label>
+          <label className="label">Seus Bancos</label>
           <li className="banks">
             <Icon
               icon={<SiNubank className="nubank icon" />}
@@ -92,37 +92,41 @@ export default function Home() {
           <div className="primary-content"></div>
         </div>
         <div className="section-secondary">
+          <label className="label">Seus Gastos</label>
           <div className="secondary">
+          
             <table className="table-value">
               <tr>
                 <th>Fonte</th>
                 <th>Valor</th>
               </tr>
-              <tbody>
+             
                 <tr>
                   <td>Comida</td>
-
-                  <td>Energia</td>
-
-                  <td>Agua</td>
-
-                  <td>Academia</td>
-
-                  <td>Lazer</td>
+                  <td>R$799,00</td>
                 </tr>
 
                 <tr>
-                  <td>R$799,00</td>
-
+                  <td>Energia</td>
                   <td>R$199,00</td>
+                </tr>
 
+                <tr>
+                  <td>Agua</td>
                   <td>R$149,00</td>
+                </tr>
 
+                <tr>
+                  <td>Academia</td>
                   <td>R$129,00</td>
+                </tr>
+
+                <tr>
+                  <td>Lazer</td>
 
                   <td>R$499,00</td>
                 </tr>
-              </tbody>
+              
             </table>
           </div>
         </div>
