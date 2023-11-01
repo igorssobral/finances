@@ -64,35 +64,66 @@ export default function Home() {
           <label>Seus Bancos</label>
           <li className="banks">
             <Icon
-              icon={<SiNubank  className="nubank icon" />}
-              label="R$ 99,99" bank="Nubank"
-            />
-            <Icon
-              icon={<SiPicpay  className="picpay icon" />}
-              label="R$ 99,99" bank="Picpay"
-            />
-            <Icon
-              icon={<SiNubank  className="nubank icon" />}
-              label="R$ 99,99"bank="Nubank"
+              icon={<SiNubank className="nubank icon" />}
+              label="R$ 1045,99"
+              bank="Nubank"
             />
             <Icon
               icon={<SiPicpay className="picpay icon" />}
-              label="R$ 99,99" bank="Picpay"
+              label="R$ 899,99"
+              bank="Picpay"
             />
             <Icon
               icon={<SiNubank className="nubank icon" />}
-              label="R$ 99,99" bank="Nubank"
+              label="R$ 1045,99"
+              bank="Nubank"
+            />
+            <Icon
+              icon={<SiPicpay className="picpay icon" />}
+              label="R$ 899,99"
+              bank="Picpay"
+            />
+            <Icon
+              icon={<SiNubank className="nubank icon" />}
+              label="R$ 1045,99"
+              bank="Nubank"
             />
           </li>
           <div className="primary-content"></div>
         </div>
         <div className="section-secondary">
           <div className="secondary">
-            <p>Comida R$799,00</p>
-            <p>Energia R$199,00</p>
-            <p>Agua R$149,00</p>
-            <p>Academia R$129,00</p>
-            <p>Lazer R$499,00</p>
+            <table className="table-value">
+              <tr>
+                <th>Fonte</th>
+                <th>Valor</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>Comida</td>
+
+                  <td>Energia</td>
+
+                  <td>Agua</td>
+
+                  <td>Academia</td>
+
+                  <td>Lazer</td>
+                </tr>
+
+                <tr>
+                  <td>R$799,00</td>
+
+                  <td>R$199,00</td>
+
+                  <td>R$149,00</td>
+
+                  <td>R$129,00</td>
+
+                  <td>R$499,00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
