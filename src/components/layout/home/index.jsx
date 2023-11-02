@@ -1,5 +1,5 @@
 import "./style.css";
-import Button from "@mui/material/Button";
+import Button from "../../ui/button";
 import { AiOutlineSearch, AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
 import { VscDiffAdded } from "react-icons/vsc";
@@ -10,6 +10,9 @@ import { Chart } from "react-google-charts";
 
 export default function Home() {
   const [visible, setVisible] = useState(true);
+  const [visibleInput, setVisibleInput] = useState(false);
+  const [saldo, setSaldo] = useState();
+  const [input, setInput] = useState();
   const [options, setOptions] = useState({
     title: "Finanças",
   });
@@ -29,6 +32,14 @@ export default function Home() {
   function handleClick() {
     setVisible(() => !visible);
   }
+  function handleInput() {
+    setVisibleInput(() => !visibleInput);
+  }
+  function addSaldo() {
+    console.log("🚀 ~ file: index.jsx:40 ~ Home ~ input:", input)
+    setSaldo(input);
+    
+  }
 
   return (
     <div className="container">
@@ -42,7 +53,7 @@ export default function Home() {
 
         <div className="saldo-content">
           <p className="saldo">
-            Saldo: R$ {visible ? "3.300,00" : "_____"}
+            Saldo: R$ {visible ? saldo : "_____"}
             {!visible && (
               <AiFillEyeInvisible
                 title="Ver saldo"
@@ -58,9 +69,22 @@ export default function Home() {
               />
             )}
           </p>{" "}
-          <p>
-            Adicionar saldo <VscDiffAdded className="add" />
+          <p className="addS">
+            Adicionar saldo{" "}
+            <VscDiffAdded className="add" onClick={handleInput} />
           </p>
+          {visibleInput && (
+            <input
+              className="inputSaldo"
+              type="number"
+              placeholder="R$:"
+              onChange={(e) => setInput(e.target.value)}
+              value={input}
+            />
+          )}
+          {visibleInput && (
+            <Button label="Adicionar" onClick={addSaldo}></Button>
+          )}
         </div>
       </section>
       <section className="section-home">
@@ -69,27 +93,27 @@ export default function Home() {
           <li className="banks">
             <Icon
               icon={<SiNubank className="nubank icon" />}
-              label="R$ 1045,99"
+              label="R$1045,99"
               bank="Nubank"
             />
             <Icon
               icon={<SiPicpay className="picpay icon" />}
-              label="R$ 899,99"
+              label="R$899,99"
               bank="Picpay"
             />
             <Icon
               icon={<SiNubank className="nubank icon" />}
-              label="R$ 1045,99"
+              label="R$1045,99"
               bank="Nubank"
             />
             <Icon
               icon={<SiPicpay className="picpay icon" />}
-              label="R$ 899,99"
+              label="R$899,99"
               bank="Picpay"
             />
             <Icon
               icon={<SiNubank className="nubank icon" />}
-              label="R$ 1045,99"
+              label="R$1045,99"
               bank="Nubank"
             />
           </li>

@@ -222,9 +222,11 @@
     border-bottom: 10px solid blue;
     border: 1px solid;
     border-radius: 20%;
+    transition: transform 0.5s;
+}
 
-
-
+.icon:hover{
+    transform: scale(1.2);
 }
 
 .nubank {
@@ -269,25 +271,40 @@ table, td, th {
     color: rgb(0, 127, 253);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8vh;
-    
 }
 
 .table-value {
     width: 300px;
-
 }
 
 .table-value td {
     color: white;
     text-align: center;
     background-color: rgb(0, 127, 253);
-   
-    
-    
 }
-
-.add{
+.addS{
+    width: 150px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(0, 127, 253);
+    margin-left: 10px;
+}
+.add {
     font-size: 20px;
     margin-left: 5px;
-    
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.add:hover{
+    transform: scale(1.2);
+}
+
+.inputSaldo{
+    display: flex;
+    margin-left: 10px;
+    font-size: 1.5vh;
+    width:80px;
+    border-radius: 10px;
 }
