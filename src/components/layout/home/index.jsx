@@ -6,7 +6,6 @@ import { VscDiffAdded } from "react-icons/vsc";
 import { SiNubank, SiPicpay } from "react-icons/si";
 import { useState } from "react";
 import Icon from "../../ui/icon";
-import { Chart } from "react-google-charts";
 
 export default function Home() {
   const [visible, setVisible] = useState(true);
