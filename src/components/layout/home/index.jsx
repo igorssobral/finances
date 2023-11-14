@@ -6,6 +6,7 @@ import { VscDiffAdded } from "react-icons/vsc";
 import { SiNubank, SiPicpay } from "react-icons/si";
 import { useState } from "react";
 import Icon from "../../ui/icon";
+import TextField from '@mui/material/TextField';
 
 export default function Home() {
   const [visible, setVisible] = useState(true);
@@ -73,13 +74,11 @@ export default function Home() {
             <VscDiffAdded className="add" onClick={handleInput} />
           </p>
           {visibleInput && (
-            <input
-              className="inputSaldo"
-              type="number"
-              placeholder="R$:"
+           <TextField id="filled-basic" helperText="adicione o valor" label="Saldo" variant="filled"  placeholder="R$:"
               onChange={(e) => setInput(e.target.value)}
-              value={input}
-            />
+              value={input}/>
+             
+            
           )}
           {visibleInput && (
             <Button label="Adicionar" onClick={addSaldo}></Button>

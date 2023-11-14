@@ -1,9 +1,11 @@
-import "./style.css";
 
-export default function Button(props) {
+import * as React from "react";
+import Button from "@mui/material/Button";
+
+export default function ButtonUi(props) {
   return (
-    <button title={props.title} onClick={props.onClick}>
+    <Button variant="contained" title={props.title} onClick={props.onClick}>
       {props.label}
-    </button>
+    </Button>
   );
 }
