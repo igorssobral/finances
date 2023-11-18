@@ -42,9 +42,7 @@ export default function Home() {
   }
 
   return (
-    <div className="container">
-      {/* <input type="text" className="input"/> 
-           <AiOutlineSearch className="search"/> */}
+    <div className="container"
 
       <section className="section-content">
         <div className="section">
