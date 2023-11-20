@@ -8,6 +8,8 @@ import {
 } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { useState } from "react";
+import { Badge } from "@mui/material";
+import MailIcon from '@mui/icons-material/Mail';
 
 export default function Navbar() {
   return (
@@ -19,6 +21,9 @@ export default function Navbar() {
       </ul>
 
       <NavItems label="" href="#" icon={<CgProfile />} />
+      <NavItems label="" href="#" icon={<Badge badgeContent={4} color="primary">
+  <MailIcon color="action" />
+</Badge> } />
     </nav>
   );
 }

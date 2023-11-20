@@ -42,7 +42,7 @@ export default function Home() {
   }
 
   return (
-    <div className="container"
+    <div className="container">
 
       <section className="section-content">
         <div className="section">
