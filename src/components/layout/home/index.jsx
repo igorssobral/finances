@@ -7,6 +7,7 @@ import { SiNubank, SiPicpay } from "react-icons/si";
 import { useState } from "react";
 import Icon from "../../ui/icon";
 import TextField from '@mui/material/TextField';
+import EnhancedTable from "../table";
 
 export default function Home() {
   const [visible, setVisible] = useState(true);
@@ -85,8 +86,8 @@ export default function Home() {
       </section>
       <section className="section-home">
         <div className="section-primary">
-          <label className="label">Seus Bancos</label>
-         
+          <label className="label"></label>
+         <EnhancedTable/>
           <div className="primary-content"></div>
         </div>
       
