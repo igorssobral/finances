@@ -22,7 +22,7 @@ export default function Navbar() {
       </ul>
       <ul className="pages">
          <NavItems label="" href="#" icon={<AccountCircleIcon fontSize="" />} />
-      <NavItems label="" href="#" icon={<Badge badgeContent={4} color="secondary">
+      <NavItems label="" href="#" icon={<Badge badgeContent={1} color="secondary">
   <MailIcon color="white" />
 </Badge> } />
       </ul>

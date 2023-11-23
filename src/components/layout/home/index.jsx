@@ -86,72 +86,10 @@ export default function Home() {
       <section className="section-home">
         <div className="section-primary">
           <label className="label">Seus Bancos</label>
-          <li className="banks">
-            <Icon
-              icon={<SiNubank className="nubank icon" />}
-              label="R$1045,99"
-              bank="Nubank"
-            />
-            <Icon
-              icon={<SiPicpay className="picpay icon" />}
-              label="R$899,99"
-              bank="Picpay"
-            />
-            <Icon
-              icon={<SiNubank className="nubank icon" />}
-              label="R$1045,99"
-              bank="Nubank"
-            />
-            <Icon
-              icon={<SiPicpay className="picpay icon" />}
-              label="R$899,99"
-              bank="Picpay"
-            />
-            <Icon
-              icon={<SiNubank className="nubank icon" />}
-              label="R$1045,99"
-              bank="Nubank"
-            />
-          </li>
+         
           <div className="primary-content"></div>
         </div>
-        <div className="section-secondary">
-          <label className="label">Seus Gastos</label>
-          <div className="secondary">
-            <table className="table-value">
-              <tr>
-                <th>Fonte</th>
-                <th>Valor</th>
-              </tr>
-
-              <tr>
-                <td>Comida</td>
-                <td>R$799,00</td>
-              </tr>
-
-              <tr>
-                <td>Energia</td>
-                <td>R$199,00</td>
-              </tr>
-
-              <tr>
-                <td>Agua</td>
-                <td>R$149,00</td>
-              </tr>
-
-              <tr>
-                <td>Academia</td>
-                <td>R$129,00</td>
-              </tr>
-
-              <tr>
-                <td>Lazer</td>
-
-                <td>R$499,00</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+      
       </section>
     </div>
   );
