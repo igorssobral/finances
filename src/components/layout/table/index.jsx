@@ -33,10 +33,10 @@ function createData(id, name, value, date) {
 }
 
 const rows = [
-    createData(1, 'Compras', 699, 3.7),
-    createData(2, 'Luz', 452, 25.0),
-    createData(3, 'Agua', 262, 16.0,),
-    createData(4, 'Academia', 159, 6.0),
+    createData(1, 'Compras', 699, '08/2023'),
+    createData(2, 'Luz', 452, '08/2023'),
+    createData(3, 'Agua', 262, '09/2023'),
+    createData(4, 'Academia', 159, '08/2023'),
    
 
 ];
@@ -57,10 +57,7 @@ function getComparator(order, orderBy) {
     : (a, b) => -descendingComparator(a, b, orderBy);
 }
 
-// Since 2020 all major browsers ensure sort stability with Array.prototype.sort().
-// stableSort() brings sort stability to non-modern browsers (notably IE11). If you
-// only support modern browsers you can replace stableSort(exampleArray, exampleComparator)
-// with exampleArray.slice().sort(exampleComparator)
+
 function stableSort(array, comparator) {
   const stabilizedThis = array.map((el, index) => [el, index]);
   stabilizedThis.sort((a, b) => {
@@ -327,10 +324,9 @@ export default function EnhancedTable() {
                     >
                       {row.name}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{row.value}</TableCell>
+                    <TableCell align="right">{row.date}</TableCell>
+                    
                   </TableRow>
                 );
               })}
