@@ -81,7 +81,7 @@ const headCells = [
     id: 'value',
     numeric: true,
     disablePadding: false,
-    label: 'Valor',
+    label: 'Valor R$',
   },
   {
     id: 'date',
