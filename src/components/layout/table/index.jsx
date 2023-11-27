@@ -21,6 +21,7 @@ import Switch from '@mui/material/Switch';
 import DeleteIcon from '@mui/icons-material/Delete';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
+import './style.css'
 
 function createData(id, name, value, date) {
   return {
@@ -100,7 +101,7 @@ function EnhancedTableHead(props) {
   };
 
   return (
-    <TableHead>
+    <TableHead >
       <TableRow>
         <TableCell padding="checkbox">
           <Checkbox
@@ -274,10 +275,10 @@ export default function EnhancedTable() {
   );
 
   return (
-    <Box sx={{ width: '70%' }}>
+    <Box sx={{ width: '70%' }} >
       <Paper sx={{ width: '100%', mb: 2 }}>
         <EnhancedTableToolbar numSelected={selected.length} />
-        <TableContainer>
+        <TableContainer className='table-cont'>
           <Table
             sx={{ minWidth: 750 }}
             aria-labelledby="tableTitle"
