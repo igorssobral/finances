@@ -8,12 +8,12 @@ a{
     border: 0;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    transition: transform 0.6s;
+    transition: transform 0.3s;
 
 }
 
 a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .navItems{
@@ -29,6 +29,6 @@ a:hover{
 
 .navi:hover{
     cursor: pointer;
-    text-decoration: underline;
-    transform: scale(1.1);
+    
+    transform: scale(1.05);
 }
