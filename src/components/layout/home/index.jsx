@@ -26,7 +26,20 @@ export default function Home() {
 
   return (
     <div className="container">
+      <section className="section-content">
 
+        <div className="primary-content">
+          <div className="content"></div>
+          <div className="content"></div>
+          <div className="content"></div>
+        </div>
+
+        <div className="aside">
+
+        </div>
+
+
+      </section>
     
     </div>
   );

@@ -6,3 +6,35 @@
     width: 100%;
     margin-top: 5px;
 }
+
+.section-content{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.primary-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.content,.aside{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+
+}
+
+.content{
+    width: 630px;
+    height: 240px;
+}
+
+.aside{
+    width: 600px;
+    height: 795px;
+    
+}
+
