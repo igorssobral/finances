@@ -37,4 +37,8 @@
     height: 795px;
     
 }
-
+.chart{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+}

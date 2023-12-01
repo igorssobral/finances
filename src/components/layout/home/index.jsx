@@ -1,6 +1,7 @@
 import "./style.css";
 import { useState } from "react";
-import ApexCharts from "apexcharts";
+import Chart from "react-apexcharts";
+import Donut from "../chart";
 
 export default function Home() {
   const [visible, setVisible] = useState(true);
@@ -19,19 +20,11 @@ export default function Home() {
     setSaldo(input);
     
   }
-  const options = {
-    chart: {
-      type: 'donut'
-    },
-    series: [{
-      name: 'sales',
-      data: [30,40,35,50,49,60,70,91,125]
-    }],
-    xaxis: {
-      categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
-    }
-  }
+ 
 
+  
+
+  
   return (
     <div className="container">
       <section className="section-content">
@@ -43,6 +36,13 @@ export default function Home() {
         </div>
 
         <div className="aside">
+          <div className="chart">
+          <Donut/>
+          </div>
+
+        </div>
+
+        <div className="table-content">
 
         </div>
 
@@ -51,4 +51,5 @@ export default function Home() {
     
     </div>
   );
-}
+
+  }
