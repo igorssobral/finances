@@ -1,10 +1,6 @@
 import "./style.css";
-import Button from "../../ui/button";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import { FaUserCircle } from "react-icons/fa";
-import { VscDiffAdded } from "react-icons/vsc";
 import { useState } from "react";
-import TextField from '@mui/material/TextField';
+import ApexCharts from "apexcharts";
 
 export default function Home() {
   const [visible, setVisible] = useState(true);
@@ -22,6 +18,18 @@ export default function Home() {
     console.log("🚀 ~ file: index.jsx:40 ~ Home ~ input:", input)
     setSaldo(input);
     
+  }
+  const options = {
+    chart: {
+      type: 'donut'
+    },
+    series: [{
+      name: 'sales',
+      data: [30,40,35,50,49,60,70,91,125]
+    }],
+    xaxis: {
+      categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
+    }
   }
 
   return (
