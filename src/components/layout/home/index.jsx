@@ -2,6 +2,9 @@ import "./style.css";
 import { useState } from "react";
 import Chart from "react-apexcharts";
 import Donut from "../chart";
+import { BiSolidBank } from "react-icons/bi";
+import Icon from "../../ui/icon";
+
 
 export default function Home() {
   const [visible, setVisible] = useState(true);
@@ -30,7 +33,9 @@ export default function Home() {
       <section className="section-content">
 
         <div className="primary-content">
-          <div className="content"></div>
+          <div className="content">
+          <BiSolidBank/>
+          </div>
           <div className="content"></div>
           <div className="content"></div>
         </div>
