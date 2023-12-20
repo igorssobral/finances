@@ -30,6 +30,9 @@
 .content{
     width: 630px;
     height: 240px;
+    display: flex;
+
+  
 }
 
 .aside{
@@ -42,3 +45,4 @@
     margin: 5%;
     justify-content: center;
 }
+
