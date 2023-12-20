@@ -10,7 +10,8 @@ height: 220px;
 display: flex;
 align-items: center;
 gap: 20px;
-
+ border: 1px solid #230549;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
 }
 
 .section_1,.section_2{
@@ -18,5 +19,6 @@ gap: 20px;
     height: 90%;
     background-color: #b1a5c9;
     border-radius: 15px;
+   
     
 }
