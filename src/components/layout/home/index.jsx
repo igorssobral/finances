@@ -7,6 +7,7 @@ import PaidIcon from "@mui/icons-material/Paid";
 import MultilineChartIcon from '@mui/icons-material/MultilineChart';
 import { Content } from "../../ui/section-content/content";
 
+
 export default function Home() {
   const [visible, setVisible] = useState(true);
   const [visibleInput, setVisibleInput] = useState(false);
@@ -51,8 +52,13 @@ export default function Home() {
         <div className="aside">
           <div className="chart">
             <Donut />
+
           </div>
-          <div className="table_content"></div>
+          <div className="table_content">
+          
+               
+               
+          </div>
         </div>
 
        
