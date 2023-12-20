@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav>
       <ul className="pages">
         <NavItems label="Visão Geral" class="navi" />
-        <NavItems label="Financeiro" class="navi"/>
+        <NavItems label="Transações" class="navi"/>
         <NavItems label="Metas" class="navi"/>
       </ul>
       <ul className="pages">
