@@ -4,6 +4,7 @@ import Chart from "react-apexcharts";
 import Donut from "../chart";
 import { BiSolidBank } from "react-icons/bi";
 import PaidIcon from "@mui/icons-material/Paid";
+import MultilineChartIcon from '@mui/icons-material/MultilineChart';
 import { Content } from "../../ui/section-content/content";
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
             children={
               <BiSolidBank
                 fontSize={"40px"}
-                style={{ color: "#007ffd", padding: "10px" }}
+                style={{ color: "#230549", padding: "10px" }}
               />
             }
           />
@@ -39,21 +40,22 @@ export default function Home() {
             children={
               <PaidIcon
                 fontSize={"large"}
-                style={{ color: "#007ffd", padding: "10px" }}
+                style={{ color: "#230549", padding: "10px" }}
               />
             }
           />
-          <Content />
+          <Content children={<MultilineChartIcon  fontSize={"large"}
+                style={{ color: "#230549", padding: "10px" }}/>}/>
         </div>
 
         <div className="aside">
           <div className="chart">
             <Donut />
           </div>
-          <div></div>
+          <div className="table_content"></div>
         </div>
 
-        <div className="table-content"></div>
+       
       </section>
     </div>
   );

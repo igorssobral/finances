@@ -6,6 +6,8 @@ a{
     display: flex;
     font-size: 4vh;
     border: 0;
+    padding: 5px;
+    border-radius: 5px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: transform 0.3s;
@@ -13,11 +15,12 @@ a{
 }
 
 a:hover{
-    transform: scale(1.1);
+    color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .navItems{
-    color: aqua;
+    color: #230549;
 }
 
 .navi {
@@ -29,6 +32,4 @@ a:hover{
 
 .navi:hover{
     cursor: pointer;
-    
-    transform: scale(1.05);
 }

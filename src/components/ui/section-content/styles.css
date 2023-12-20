@@ -6,8 +6,17 @@
 
 .content{
 width: 630px;
-height: 240px;
+height: 220px;
 display: flex;
+align-items: center;
+gap: 20px;
 
+}
 
+.section_1,.section_2{
+    width: 41%;
+    height: 90%;
+    background-color: #b1a5c9;
+    border-radius: 15px;
+    
 }
