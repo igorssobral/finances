@@ -24,8 +24,23 @@
 }
 .card_2{
     width: 60%;
-  
+    display: flex;
+    flex-direction: column;
+    
     
    
    
+}
+
+form{
+    display: flex;
+    
+    height: 40%;
+    margin-top: 10px;
+    gap: 50px;
+    padding: 20px;
+    border: 1px solid #230549;
+    background-color: #230549;
+    border-radius: 15px;
+    margin: 50px 50px;
 }
