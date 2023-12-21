@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+.card,.card_2{
+    background-color: white;
+    height: 700px;
+     border-radius: 15px; 
+     margin-top: 50px;
+     border: 1px solid #230549;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
+}
+.card{
+    width: 20%;
+    
+    
+    
+}
+.card_2{
+    width: 60%;
+  
+    
+   
+   
+}
