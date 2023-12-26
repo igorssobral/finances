@@ -1,46 +1,49 @@
-.container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
+.container {
+    display: grid;
+    grid-template-columns: 400px 700px;
+    grid-gap: 50px;
+    /* flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    
-    
-}
-.card,.card_2{
-    background-color: white;
-    height: 700px;
-     border-radius: 15px; 
-     margin-top: 50px;
-     border: 1px solid #230549;
-     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562);
-}
-.card{
-    width: 20%;
-    
-    
-    
-}
-.card_2{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    
-    
-   
-   
+    justify-content: space-evenly; */
+
+
 }
 
-form{
-    display: flex;
-    
-    height: 40%;
-    margin-top: 10px;
-    gap: 50px;
-    padding: 20px;
-    border: 1px solid #230549;
-    background-color: #230549;
+.card,.card_2,.card_3 {
+    background-color: white;
     border-radius: 15px;
-    margin: 50px 50px;
+    
 }
+
+.card{
+    grid-column: 1;
+    grid-row: 1;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_2{
+    grid-column: 2;
+    grid-row: 1;
+    height: 570px;
+    margin-top: 10%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    margin: 30px 60px;
+} 
+input{
+    background-color: rgb(224, 226, 231);
+}
+
+
+input:focus{
+    outline: 1px solid #641ec0;
+}
+ 
