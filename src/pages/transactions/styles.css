@@ -3,37 +3,39 @@
     --primary--color: #697eb9;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 400px 700px;
-    grid-gap: 50px;
-    /* flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; */
-
-
+.card{
+    grid-area: card;
+}
+.card_2{
+    grid-area: card_2;
 }
 
-.card,.card_2,.card_3 {
+.container_transaction{
+    display: grid;
+    grid-template-columns: 20% 60%;
+    grid-template-areas: 
+    "card card_2"
+    ;
+    grid-gap: 20px;
+    justify-content: center;
+
+}
+.card,.card_2{
     background-color: white;
     border-radius: 15px;
+    height: 570px;
+    margin-top: 50px;
     
 }
 
 .card{
-    grid-column: 1;
-    grid-row: 1;
-    height: 570px;
-    margin-top: 8%;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
 }
 .card_2{
-    grid-column: 2;
-    grid-row: 1;
-    height: 570px;
-    margin-top: 5%;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +55,7 @@ form {
     padding-left: 5%;
 } 
 input{
-    background-color: rgb(224, 226, 231);
+    background-color: #e0e2e7;
     padding: 2px;
 }
 
@@ -72,17 +74,14 @@ input:focus{
     width: 8px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
   
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
   }
   
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--primary--color);
   }
@@ -97,7 +96,7 @@ input:focus{
     position: sticky;
     top: 0;
     z-index: 2;
-    color: aliceblue;
+    color: #ffffff;
     background-color: var(--primary--color);
     padding: 10px;
     border-collapse: separate;

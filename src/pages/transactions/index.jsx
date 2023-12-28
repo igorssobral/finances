@@ -16,7 +16,7 @@ const Transactions = () => {
 
 
   return (
-    <div className="container">
+    <div className="container_transaction">
       <div className="card">
         <h2>Adicionar Transação</h2>
         <form action="">
