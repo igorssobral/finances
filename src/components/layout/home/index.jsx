@@ -26,9 +26,9 @@ export default function Home() {
   }
 
   return (
-    <div className="container">
+    <div className="container_home">
       <section className="section-content">
-        <div className="primary-content">
+        <div className="primary_content">
           <Content
             children={
               <BiSolidBank
@@ -59,9 +59,7 @@ export default function Home() {
                
                
           </div>
-        </div>
-
-       
+        </div> 
       </section>
     </div>
   );

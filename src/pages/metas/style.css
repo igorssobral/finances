@@ -14,16 +14,18 @@
 
 .container {
     display: grid;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 20% 50%;
     grid-template-rows: 250px 350px;
     grid-template-areas:
-        "card1 card2 "
+        "card1 card2"
         "card3 card3"     
     ;
+    grid-gap: 50px;
+    justify-content: center;
     
 
 }
-.card1,.card2{
+.card1,.card2,.card3{
     margin-top: 50px;
 }
 .card1, .card2,.card3 {
@@ -41,12 +43,10 @@
     height: 250px;
    
 }
-
- .card3 {
-
+.card3 {  
     height: 350px;
-}  
+   
+}
 
-/* .card_2>h2 {
-    margin-top: 20px;
-} */
+
+
