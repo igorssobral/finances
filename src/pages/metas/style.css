@@ -1,0 +1,52 @@
+:root {
+    --primary--color: #697eb9;
+}
+
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 250px 350px;
+    grid-template-areas:
+        "card1 card2 "
+        "card3 card3"     
+    ;
+    
+
+}
+.card1,.card2{
+    margin-top: 50px;
+}
+.card1, .card2,.card3 {
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.card1 {
+    height: 250px;
+    
+}
+
+.card2 {  
+    height: 250px;
+   
+}
+
+ .card3 {
+
+    height: 350px;
+}  
+
+/* .card_2>h2 {
+    margin-top: 20px;
+} */
