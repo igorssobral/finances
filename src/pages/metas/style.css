@@ -45,7 +45,13 @@
 }
 .card3 {  
     height: 350px;
+  
    
+}
+
+.form-metas{
+    width: min-content;
+    padding: 0px;
 }
 
 
