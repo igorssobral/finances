@@ -86,13 +86,13 @@ input:focus{
     background: var(--primary--color);
   }
 
- table{
+ .table-transactions {
     width: 100%;
     border-collapse: separate;
     border-spacing: 8px;
     
  }
- th{
+ .table-transactions th{
     position: sticky;
     top: 0;
     z-index: 2;
@@ -102,13 +102,13 @@ input:focus{
     border-collapse: separate;
     border-spacing: 8px;
  }
- td{
+ .table-transactions td{
     
     padding: 15px;
     border-radius: 10px;
  
  }
- td{ 
+ .table-transactions td{ 
     padding: 10px;
     text-align: center;
     background-color: #e9eaee;

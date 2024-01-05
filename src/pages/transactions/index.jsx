@@ -40,7 +40,7 @@ const Transactions = () => {
         <h2>Transações</h2>
 
         <div className="table-content">
-          <table>
+          <table className="table-transactions">
             <tr>
               <th>Transação</th>
               <th>Data</th>
