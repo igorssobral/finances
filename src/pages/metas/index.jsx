@@ -1,5 +1,7 @@
 import React from "react";
 import { Input } from "../../components/ui/input";
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 import "./style.css";
 import { Button } from "@mui/material";
@@ -25,6 +27,40 @@ const Meta = () => {
           Adicionar
         </Button>
         </form>
+        <table>
+            <tr>
+              <th>Meta</th>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Poupado Mens.</th>
+              <th>Ações</th>
+            </tr>
+            <tbody>
+            <tr>
+              <td>Viagem</td>
+              <td>12/12/2023</td>
+              <td>500</td>
+              <td>50</td>
+              <td><EditIcon color="info"/><DeleteIcon color="warning"/></td>
+            </tr>
+            <tr>
+              <td>Compra de móvel</td>
+              <td>12/12/2023</td>
+              <td>400</td>
+              <td>40</td>
+               <td><EditIcon color="info"/><DeleteIcon color="warning"/></td>
+            </tr>
+            <tr>
+              <td>Festa</td>
+              <td>12/12/2023</td>
+              <td>500</td>
+              <td>50</td>
+               <td><EditIcon color="info"/><DeleteIcon color="warning"/></td>
+            </tr>
+
+            </tbody>
+            
+          </table>
       </div>
     </section>
   );

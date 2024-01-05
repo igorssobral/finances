@@ -45,6 +45,7 @@
 }
 .card3 {  
     height: 350px;
+    display: flex;
   
    
 }
