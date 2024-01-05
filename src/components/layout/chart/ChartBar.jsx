@@ -8,8 +8,8 @@ class ChartBar extends React.Component {
       this.state = {
       
         series: [{
-          name: 'Inflation',
-          data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
+          name: 'Poupado',
+          data: [230, 310, 400, 1010, 400, 306, 302, 203, 1004, 88, 55, 102]
         }],
         options: {
           chart: {
@@ -27,7 +27,7 @@ class ChartBar extends React.Component {
           dataLabels: {
             enabled: true,
             formatter: function (val) {
-              return val + "%";
+              return "R$"+val;
             },
             offsetY: -20,
             style: {
@@ -71,7 +71,7 @@ class ChartBar extends React.Component {
             labels: {
               show: false,
               formatter: function (val) {
-                return val + "%";
+                return "R$"+val;
               }
             }
           
