@@ -1,0 +1,31 @@
+.list-content {
+    display: flex;
+    gap: 20px;
+    background-color: #f0f8ff;
+    padding: 0;
+    overflow: auto;
+}
+
+.table {
+    width: 100%;
+    margin-top: -5px;
+
+}
+
+.table th {
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10px;
+    border-collapse: separate;
+    border-spacing: 8px;
+    background-color: #697eb9;
+    color: #fff;
+    text-align: center;
+}
+
+.table td {
+    padding: 5px 0px;
+    text-align: center;
+}
