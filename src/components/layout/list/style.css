@@ -20,7 +20,7 @@
     padding: 10px;
     border-collapse: separate;
     border-spacing: 8px;
-    background-color: #697eb9;
+    background-color: var(--primary--color);
     color: #fff;
     text-align: center;
 }
@@ -28,4 +28,8 @@
 .table td {
     padding: 5px 0px;
     text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e9eaee;
+    color: var(--primary--color);
 }
