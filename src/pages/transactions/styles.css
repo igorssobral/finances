@@ -50,7 +50,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 30px;
+    gap: 15px;
     margin: 30px 60px;
     padding-left: 5%;
 } 
@@ -90,7 +90,7 @@ input:focus{
     width: 100%;
     border-collapse: separate;
     border-spacing: 8px;
-    
+    margin-top: -5px;
  }
  .table-transactions th{
     position: sticky;
@@ -102,13 +102,9 @@ input:focus{
     border-collapse: separate;
     border-spacing: 8px;
  }
- .table-transactions td{
-    
-    padding: 15px;
-    border-radius: 10px;
- 
- }
+
  .table-transactions td{ 
+    border-radius: 10px;
     padding: 10px;
     text-align: center;
     background-color: #e9eaee;

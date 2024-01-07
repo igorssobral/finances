@@ -20,8 +20,8 @@ const Transactions = () => {
       <div className="card">
         <h2>Adicionar Transação</h2>
         <form action="">
-          <Input label="Transação" type="text" />
-          <Input label="Valor gasto" type="number" />
+          <Input placeholder="digite a transaçào" label="Transação" type="text" />
+          <Input placeholder="R$" label="Valor gasto" type="number" />
           <Input label="Data" type="date"  />
         </form>
         <Button
