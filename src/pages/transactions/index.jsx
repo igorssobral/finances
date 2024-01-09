@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import React, { useState } from "react";
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Search } from "@mui/icons-material";
 import { Input } from "../../components/ui/input";
 import "./styles.css";
 
@@ -37,8 +38,23 @@ const Transactions = () => {
         </Button>
       </div>
       <div className="card_2">
-        <h2>Transações</h2>
+        <div className="search-content">
+           <Input placeholder="Buscar transação"/>
+            <Button
+              style={{
+                height: "max-content",
+                marginTop: "4px",
+                width: "max-content",
+                gap: "10px",
+                backgroundColor: "#697eb9",
+                color: "#fff",
+              }}
+            >
+              <Search/>
+            </Button>
+        </div>
 
+       
         <div className="table-content">
           <table className="table-transactions">
             <tr>
@@ -76,6 +92,24 @@ const Transactions = () => {
               <td>Alfreds</td>
               <td>12/12/2023</td>
               <td>500</td>
+               <td><EditIcon color="info"/><DeleteIcon color="warning"/></td>
+            </tr>
+            <tr>
+              <td>Centro </td>
+              <td>12/12/2023</td>
+              <td>400</td>
+               <td><EditIcon color="info"/><DeleteIcon color="warning"/></td>
+            </tr>
+            <tr>
+              <td>Centro </td>
+              <td>12/12/2023</td>
+              <td>400</td>
+               <td><EditIcon color="info"/><DeleteIcon color="warning"/></td>
+            </tr>
+            <tr>
+              <td>Centro </td>
+              <td>12/12/2023</td>
+              <td>400</td>
                <td><EditIcon color="info"/><DeleteIcon color="warning"/></td>
             </tr>
             <tr>
