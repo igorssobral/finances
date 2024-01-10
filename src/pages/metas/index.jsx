@@ -1,22 +1,22 @@
 import React, { useState } from "react";
+import "./style.css";
 import { Input } from "../../components/ui/input";
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import SearchIcon from "@mui/icons-material/Search";
 import { ListContent } from "../../components/layout/list";
-import "./style.css";
 import { Button } from "@mui/material";
 import ChartBar from "../../components/layout/chart/ChartBar";
+
 const Meta = () => {
   const [addMetaVisible, setAddMetaVisible] = useState(false);
+  const [meta, setMeta] = useState({ meta: "", valor: 0, aporte: 0 });
 
-  function handleMetas() {
+  function handleAddMetasVisible() {
     setAddMetaVisible(!addMetaVisible);
-    console.log(
-      "🚀 ~ file: index.jsx:13 ~ Meta ~ addMetaVisible:",
-      addMetaVisible
-    );
+  }
+
+  function handleMetas(e) {
+  
   }
 
   return (
@@ -32,9 +32,26 @@ const Meta = () => {
         <div className="form-content">
           {addMetaVisible && (
             <form className="form-metas " action="">
-              <Input placeholder="digite a meta" label="Meta" width="200px" />
-              <Input placeholder="R$" label="Valor total a poupar" width="200px" type="number" />
-              <Input placeholder="R$" label="Aporte Mensal" width="200px" type="number" />
+              <Input
+                placeholder="digite a meta"
+                label="Meta"
+                width="200px"
+                onChange={(e) => handleMetas(e)}
+              />
+              <Input
+                placeholder="R$"
+                label="Valor total a poupar"
+                width="200px"
+                type="number"
+                onChange={(e) => handleMetas(e)}
+              />
+              <Input
+                placeholder="R$"
+                label="Aporte Mensal"
+                width="200px"
+                type="number"
+                onChange={(e) => handleMetas(e)}
+              />
               <Button
                 style={{
                   height: "fit-content",
@@ -52,7 +69,7 @@ const Meta = () => {
                   backgroundColor: "#646464",
                   color: "#fff",
                 }}
-                onClick={handleMetas}
+                onClick={handleAddMetasVisible}
               >
                 Cancelar
               </Button>
@@ -68,7 +85,7 @@ const Meta = () => {
                 backgroundColor: "#697eb9",
                 color: "#fff",
               }}
-              onClick={handleMetas}
+              onClick={handleAddMetasVisible}
             >
               <AddCircleOutlineIcon /> Adicionar Meta
             </Button>
@@ -77,7 +94,7 @@ const Meta = () => {
 
         <section className="lists-metas">
           <div className="addMeta">
-            <Input placeholder="Buscar meta"/>
+            <Input placeholder="Buscar meta" />
             <Button
               style={{
                 height: "max-content",
