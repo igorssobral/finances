@@ -9,3 +9,36 @@ body{
  
 
 }
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin: 30px 60px;
+   
+} 
+input{
+  background-color: #e0e2e7;
+  padding: 2px;
+}
+
+
+input:focus{
+  outline: 1px solid var(--primary--color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary--color);
+}

@@ -5,11 +5,13 @@
 }
 
 .content{
-width: 630px;
+width: 95%;
 height: 220px;
 display: flex;
 align-items: center;
-gap: 20px;
+justify-content: center;
+margin: auto;
+
 }
 
 .section_1,.section_2{
